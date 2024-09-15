@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWG Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Snake Water and Gun Game<h5>One who scores 5 points first is the winner</h5></h1>
+        </div>
+        <div class="container">
+            <div class="computer">
+                <h3 class="comp-head">Computer</h3>
+                <img class="comp-img rotate-scale-up-ver" id="comp-img" src="images/robot.png">
+            </div>
+            <div class="score">
+                <h1 class="vs">V/S</h1>
+                <div class="scoree">
+                    <p>Score</p><br>
+                    <div class="scr1"><b id="scr1">0</b></div>
+                    <p>-</p>
+                    <div class="scr2"><b id="scr2">0</b></div>
+                </div>
+                <div class="remark" id="remark">Remark</div>
+            </div>
+            <div class="user">
+                <h3 class="user-head" id="user-head">User</h3>
+                <img class="user-img rotate-scale-up-ver" id="user-img" src="images/human.png">
+            </div>
+            <div class="options" id="options">
+                <div class="op-head"><b>Options</b></div>
+                <button class="ops" onclick="user_side1()"><h3>Snake</h3></button>
+                <button class="ops" onclick="user_side2()"><h3>Water</h3></button>
+                <button class="ops" onclick="user_side3()"><h3>Gun</h3></button>
+            </div>
+            <button class="restart" id="restart" onclick="play_again()"><h3>Restart</h3></button>
+        </div>
+        <div class="footer">
+            <h2>All Rights Reserved @Sudipta Saha 2024.</h2>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
